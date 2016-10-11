@@ -26,7 +26,7 @@ echo "# my readme" >> README.md
 git_push(){
 
 #add file
-echo -n "what file do you want push:"
+echo -n "what file do you want push(Enter push *):"
 read filename
 if [ "$filename" == '' ];then
     `git add *`
@@ -36,10 +36,10 @@ fi
 
 
 #commit file
-echo -n "input your commit:"
+echo -n "input your commit(default commit \"test\"):"
 read commit
 if [ "$commit" == '' ];then
-    `git commit -m "test"`
+    `git commit -m \"test\"`
 else
     `git commit -m \"$commit\"`
 fi
