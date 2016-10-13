@@ -39,7 +39,7 @@ fi
 echo -n "input your commit(default commit \"test\"):"
 read commit
 if [ "$commit" == '' ];then
-    `git commit -m \"test\"`
+    `git commit -m "test"`
 else
     `git commit -m \"$commit\"`
 fi
